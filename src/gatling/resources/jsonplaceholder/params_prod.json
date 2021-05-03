@@ -1,0 +1,26 @@
+[
+  {
+    "resource": "/posts",
+    "count": 100
+  },
+  {
+    "resource": "/comments",
+    "count": 500
+  },
+  {
+    "resource": "/albums",
+    "count": 100
+  },
+  {
+    "resource": "/photos",
+    "count": 5000
+  },
+  {
+    "resource": "/todos",
+    "count": 200
+  },
+  {
+    "resource": "/users",
+    "count": 10
+  }
+]

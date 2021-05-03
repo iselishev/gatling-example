@@ -1,0 +1,21 @@
+plugins {
+    id 'io.gatling.gradle' version '3.5.1'
+    id 'scala'
+}
+
+group 'org.example'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    gatlingImplementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.12.3"
+}
+
+gatling {
+    logLevel = 'WARN' //logback root level
+//    logHttp = 'NONE' //set to 'ALL' for all HTTP traffic in TRADE, 'FAILURES' for failed HTTP traffic in DEBUG
+    logHttp = 'FAILURES' //set to 'ALL' for all HTTP traffic in TRADE, 'FAILURES' for failed HTTP traffic in DEBUG
+}
